@@ -12,7 +12,7 @@
 </p>
 
 
-#### Caso queria testar o projeto(https://codepen.io):
+#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/podBVeL
 
 ## 👨‍💻 Autor:
 - Linkedin: https://www.linkedin.com/in/pedro-henrique-vieira-fernandes
