@@ -1,7 +1,7 @@
 # IMERSÃO DEV_ 👨‍💻 
 
 <p align="center">
-  <img height="50" src="">
+  <img height="50" src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/logo/logo-imersao-dev-desktop.1636535198.svg">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
