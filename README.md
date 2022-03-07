@@ -29,6 +29,7 @@
 - HTML
 - CSS
 - JS
+- Codepen
 
 ## 👨‍💻 Autor:
 - Linkedin: https://www.linkedin.com/in/pedro-henrique-vieira-fernandes
