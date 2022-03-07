@@ -11,7 +11,7 @@
 
 ### Projeto 1
 <p align="start">
-  <img height="35" src="">
+  <img height="35" src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen1.png">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
