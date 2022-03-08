@@ -74,4 +74,10 @@ button{
   border-radius: 10px;
   border: none;
   margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  background: linear-gradient(rgba(2, 0, 36, 0.747), #59097938);
+  color: #ffffff;
 }
