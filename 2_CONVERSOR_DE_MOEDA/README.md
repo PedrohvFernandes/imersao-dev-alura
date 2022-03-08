@@ -7,12 +7,12 @@
 
 ### Tela do projeto:
 <p align="start">
-  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Scren1.png">
+  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen1.png">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 
-#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/podBVeL
+#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/JjOqZGo
 
 ## 👨‍💻 Autor:
 - Linkedin: https://www.linkedin.com/in/pedro-henrique-vieira-fernandes

@@ -65,17 +65,35 @@ function Converter() {
     switch (moedaEstrangeira) {
       case "Dólar":
         moedaConvertida = valorEmReal * valorDoDolar;
-        mensagemFormatada(moedaConvertida, valorEmReal);
+        mensagemFormatada(
+          moedaConvertida.toLocaleString("en-US", {
+            style: "currency",
+            currency: "USD",
+          }),
+          valorEmReal
+        );
         break;
 
       case "Euro":
         moedaConvertida = valorEmReal * valorDoEuro;
-        mensagemFormatada(moedaConvertida, valorEmReal);
+        mensagemFormatada(
+          moedaConvertida.toLocaleString("de-DE", {
+            style: "currency",
+            currency: "EUR",
+          }),
+          valorEmReal
+        );
         break;
 
       case "Libra":
         moedaConvertida = valorEmReal * valorDaLibra;
-        mensagemFormatada(moedaConvertida, valorEmReal);
+        mensagemFormatada(
+          moedaConvertida.toLocaleString("en-GB", {
+            style: "currency",
+            currency: "GBP",
+          }),
+          valorEmReal
+        );
         break;
 
       case "Bitcoins":
@@ -97,4 +115,12 @@ function Limpar() {
   valorElementForm.reset();
   valorConvertido.style.display = "none";
   aviso.style.display = "none";
+  moedaEstrangeira = "";
 }
+
+
+
+
+// Conversor de quilômetros para anos luz e verificar o tempo que demora para ir de uma estrela para outra.
+// Conversor de temperaturas entre farenheit, kelvin e celcius.
+// Adicionar uma linha ao projeto desenvolvido para que apareça o valor em bitcoin.
