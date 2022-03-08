@@ -7,7 +7,7 @@
 
 ### Tela do projeto:
 <p align="start">
-  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen1.png">
+  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Scren1.png">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
