@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Imersão Dev Alura - Aula 01</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Conversor de moedas</h1>
+      <p class="page-subtitle">Descubra os valores em real R$</p>
+      <p class="page-subtitle">Dolar: 5.06 08/03/2022</p>
+      <p class="page-subtitle">Euro: 5.51 08/03/2022</p>
+      <p class="page-subtitle">Libra: 6.63 08/03/2022</p>
+      <p class="page-subtitle">Bitcoins: 196107.55 08/03/2022</p>
+      <img
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+        class="page-logo"
+        alt=""
+      /><br /><br />
+
+      <label for="moeda">Insira o valor</label>
+      <form id="form">
+        <input
+          type="number"
+          name="valorEmReal"
+          id="valor"
+          class="input"
+          step="0.01"
+          min="0.00"
+          max="9999999999.99"
+          value=""
+          tabindex="1"
+          size="2"
+          autofocus
+          required
+        />
+        <div class="container-moedas">
+          <input
+            type="radio"
+            id="dolar"
+            name="moedaEstrangeira"
+            value="Dólar"
+            tabindex="2"
+          />
+          <label for="dolar">Dólar</label>
+          <input
+            type="radio"
+            id="euro"
+            name="moedaEstrangeira"
+            value="Euro"
+            tabindex="3"
+          />
+          <label for="euro">Euro</label>
+
+          <input
+            type="radio"
+            id="libra"
+            name="moedaEstrangeira"
+            value="Libra"
+            tabindex="4"
+          />
+          <label for="libra">Libra</label>
+
+          <input
+            type="radio"
+            id="bitcoins"
+            name="moedaEstrangeira"
+            value="Bitcoins"
+            tabindex="5"
+          />
+          <label for="bitcoins">Bitcoins</label>
+        </div>
+      </form>
+
+      <button
+        type="submit"
+        onclick="Converter()"
+        id="button-converter"
+        class="convert-button"
+        tabindex="6"
+      >
+        Converter
+      </button>
+      <button
+        type="delet"
+        onclick="Limpar()"
+        id="btnLimpar"
+        class="delet-button"
+        tabindex="7"
+      >
+        Limpar
+      </button>
+
+      <h2 id="valorConvertido"></h2>
+      <h2 id="aviso"></h2>
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img
+        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+        alt=""
+        class="alura-logo"
+      />
+    </a>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
