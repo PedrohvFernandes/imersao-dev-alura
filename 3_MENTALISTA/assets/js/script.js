@@ -2,6 +2,7 @@ let numeroSecreto = parseInt(Math.random() * 11);
 let quantidadeDeRodadas = 5;
 
 let resultado = document.querySelector("#resultado");
+let aviso = document.querySelector("#aviso");
 
 function Chutar() {
   let chute = document.getElementById("valor").value;
@@ -45,6 +46,11 @@ function sorteiaNumero(chute) {
 function quantidadeDeChances() {
   let quantidadeDeChances = document.querySelector("#quantidadeDeChances");
 
+  if (quantidadeDeRodadas === 5) {
+    quantidadeDeChances.innerHTML = `Quantidade de chances: ${quantidadeDeRodadas}`;
+    quantidadeDeChances.style.color = "green";
+  }
+
   if (quantidadeDeRodadas <= 4) {
     quantidadeDeChances.innerHTML = `Você tem somente ${quantidadeDeRodadas} rodadas`;
     quantidadeDeChances.style.color = "yellow";
@@ -68,7 +74,7 @@ function quantidadeDeChances() {
 }
 
 function validaMenorMaior(chute, numeroSorteado) {
-  let aviso = document.querySelector("#aviso");
+  
   if (chute < numeroSorteado) {
     aviso.innerHTML = `Seu chute é menor que o numero sorteado`;
   } else if (chute > numeroSorteado) {
@@ -102,6 +108,9 @@ function fimDoJogo() {
   // Adiciona a classe button
   botton_reiniciar.classList.add("button");
 
+  // Colocando o id nele
+  botton_reiniciar.setAttribute("id", "button-reiniciar")
+
   var conteudoNovo = document.createTextNode("Reiniciar");
   botton_reiniciar.appendChild(conteudoNovo); //adiciona o nó de texto à nova div criada
 
@@ -114,5 +123,23 @@ function fimDoJogo() {
 }
 
 function reset() {
-  location.reload();
+  numeroSecreto = parseInt(Math.random() * 11);
+  quantidadeDeRodadas = 5;
+
+  let button = document.querySelector("#button");
+  button.disabled = false;
+  button.classList.remove("button-desabilitado");
+
+  let button_disitir = document.querySelector("#button-desistir");
+  button_disitir.disabled = false;
+  button_disitir.classList.remove("button-desabilitado");
+
+  var button_reiniciar = document.getElementById("button-reiniciar");
+  button_reiniciar.parentNode.removeChild(button_reiniciar);
+
+  resultado.innerHTML = ``;
+  aviso.innerHTML = ``;
+  
+  quantidadeDeChances();
+
 }
