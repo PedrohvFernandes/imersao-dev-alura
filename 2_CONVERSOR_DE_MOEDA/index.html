@@ -29,7 +29,6 @@
           id="valor"
           class="input"
           step="0.01"
-          min="0.00"
           max="9999999999.99"
           value=""
           tabindex="1"
@@ -104,12 +103,69 @@
         class="alura-logo"
       />
     </a>
-    <Div class="container">
-      <p> Conversor de quilômetros para anos luz </p>
-    </Div>
-    <Div class="container">
-      <p> Conversor de temperaturas entre farenheit, kelvin e celcius </p>
-    </Div>
+    <div class="container">
+      <p>Conversor de quilômetros para anos luz</p>
+      <div>
+        <input type="number" id="km">
+        <p id="anos-luz">Anos luz: </p>
+      </div>
+      <button class='convert-button' onclick="converterAnoLuz()"> Calcular </button>
+    </div>
+
+    <div class="container">
+      <p>Conversor de temperaturas de Graus Celcius para: farenheit e kelvin</p>
+      <button id='btnZerar' class="delet-button" onClick="zerar()">Zerar</button>
+      <div class="form-group">
+    
+        <label for="celsius">Celsius</label>
+        <input type="number" min='-273' max='100' step='0.01' name="numeroC" id="numeroC" value='0' onChange='atualizaCcampoInput(); atualizaF(); atualizaK()'/> °C
+
+        <div class='slider'>
+
+            <span id='minC'>-273.00</span>
+
+            <input
+                type="range"
+                min='-273' max='100' step='0.01'
+                name="celsius" id="celsius"
+                value='0.00'
+                onChange='atualizaCcampoInputRange(); atualizaF(); atualizaK()'
+                class="animar"
+                autofocus
+            />
+
+            <span id='maxC'>100.00</span>
+
+        </div>
+      
+      <div class="form-group">
+
+        <label for="fahrenheit">Fahrenheit</label>
+        <input type="number" min='-459' max='212' step='0.01' name="numeroF" id="numeroF" disabled> °F
+
+        <div class='slider'>
+          <p id="rangeNoMomentoF">Range no momento: 32</p>
+          <span id='minC'>-459.40</span>
+          <input type="range" min='-459' max='212' step='0.01' name="fahrenheit" id="fahrenheit" value='32.00'  onChange='atualizarFK()' disabled/>
+          <span id='maxC'>212.00</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+
+        <label for="kelvin">Kelvin</label>
+        <input type="number" min='0' max='375.15' step='0.01' name="numeroK" id="numeroK" disabled> K
+        
+        <div class="slider">
+          <p id="rangeNoMomentoK">Range no momento: 273</p>
+          <span id='minC'>0.00</span>
+          <input type="range"  min='0' max='373.15' step='0.01' name="kelvin" id="kelvin" value='273.00'onChange='atualizarFK()' disabled/>
+          <span id='maxC'>373.00</span>
+        </div>
+      </div>
+    </div>
   </body>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/scriptConvesorMoeda.js"></script>
+  <script src="assets/js/scriptConversorDeTempo.js"></script>
+  <script src="assets/js/scriptConversorDeKm.js"></script>
 </html>

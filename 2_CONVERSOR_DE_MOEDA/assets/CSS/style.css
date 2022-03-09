@@ -76,3 +76,38 @@ h2 {
   font-size: 30px;
 }
 
+/* Temperatura */
+
+input[type=number] {
+  text-align: right;
+}
+
+input:disabled, input[type=range]:disabled{
+  background: #ececec;
+  cursor: not-allowed;
+}
+
+input[type=range] {
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* ANIMACAO */
+
+/* Animar o input */
+@keyframes piscar {
+  0% {
+      filter: drop-shadow(0 0 15px #00b0ff);
+      -webkit-filter: drop-shadow(0 0 15px #00b0ff);
+      -moz-filter: drop-shadow(0 0 15px #00b0ff);
+      -o-filter: drop-shadow(0 0 15px #00b0ff);
+      -ms-filter: drop-shadow(0 0 15px #00b0ff);
+  }
+  100% {
+  }
+}
+
+.animar {
+  animation: piscar .75s infinite alternate;
+}
