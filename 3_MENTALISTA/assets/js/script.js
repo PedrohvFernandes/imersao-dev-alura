@@ -67,7 +67,7 @@ function quantidadeDeChances() {
   }
 
   if (quantidadeDeRodadas === 0) {
-    quantidadeDeChances.innerHTML = `Suas rodadas acabaram, quantidade de rodadas: ${quantidadeDeRodadas}`;
+    quantidadeDeChances.innerHTML = `Suas rodadas acabaram, quantidade de rodadas: ${quantidadeDeRodadas} e o numero sorteado era ${numeroSecreto}`;
     quantidadeDeChances.style.color = "red";
     fimDoJogo();
   }
