@@ -9,7 +9,7 @@
 
 ### Projetos feitos com HTML, CSS e JS
 
-### Projeto 1
+### Projeto 1: Calculadora de media
 <p align="start">
   <img  src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Scren1.png">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -17,13 +17,21 @@
 
 #### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/podBVeL
 
-### Projeto 2
+### Projeto 2: Conversores
 <p align="start">
   <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen2.png">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 #### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/JjOqZGo
+
+### Projeto 3: Mentalista
+<p align="start">
+  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen3.png">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/abVgqBe
 
 ## Tecnologias:
 - HTML
