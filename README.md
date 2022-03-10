@@ -33,6 +33,14 @@
 
 #### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/abVgqBe
 
+### Projeto 4: Aluraflix
+<p align="start">
+  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen4.png">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+#### Caso queria testar o projeto(https://codepen.io):https://codepen.io/pedrohvfernandes/pen/vYWoWRd
+
 ## Tecnologias:
 - HTML
 - CSS

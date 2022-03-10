@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Imersão Dev Alura - Aula 04</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Aluraflix</h1>
+      <img
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
+        class="page-logo"
+        alt=""
+      />
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img
+        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+        alt=""
+        class="alura-logo"
+      />
+    </a>
+    <div class="div-introducao animar">
+      <h2 class="introducao">
+        Filmes em memoria: Coloque a descrição do filme, o link da imagem do
+        filme(Somente .png, .jpg ou .jpeg) e caso queira, você pode adicionar o
+        trailer também
+      </h2>
+    </div>
+    <div class="div-filmes-inputs">
+      <div class="div-inputs">
+        <input type="text" name="descricao" id="descricao" placeholder="Descrição do filme" />
+        <input type="text" name="linkimagem" id="linkimagem" placeholder="Link da imagem" />
+        <input type="text" name="linktrailer" id="linktrailer" placeholder="Link do trailer" />
+        <button onclick="adicionarFilme()" disabled>Adicionar</button>
+      </div>
+      <!-- <button onclick="removerFilme()">Remover o filme</button> -->
+      <!-- Botão para remover o filme nas imagens staticas-->
+    </div>
+    <!-- <p>Personagens dinamicos: Basta insrir o nome do personagem da Marvel para adicionar</p> -->
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
