@@ -39,7 +39,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
-#### Caso queria testar o projeto(https://codepen.io):https://codepen.io/pedrohvfernandes/pen/vYWoWRd
+#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/vYWoWRd
 
 ## Tecnologias:
 - HTML
