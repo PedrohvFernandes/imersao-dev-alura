@@ -256,6 +256,7 @@ function verificarDados(urlImg) {
 
 // Verifica se o filme ja existe: nome e link da imagem
 // https://desenvolvimentoparaweb.com/javascript/every-some-find-includes-javascript/
+// https://ricardo-reis.medium.com/m%C3%A9todo-some-do-array-javascript-3cde974d121d
 
 // Todos eles são: hof -> High order function, igual o find Uma função que recebe uma callback como parametro e é um metodo exclusivo de array
 
