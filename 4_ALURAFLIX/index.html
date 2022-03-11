@@ -32,14 +32,62 @@
     </div>
     <div class="div-filmes-inputs">
       <div class="div-inputs">
-        <input type="text" name="descricao" id="descricao" placeholder="Descrição do filme" />
-        <input type="text" name="linkimagem" id="linkimagem" placeholder="Link da imagem" />
-        <input type="text" name="linktrailer" id="linktrailer" placeholder="Link do trailer" />
-        <button onclick="adicionarFilme()" disabled>Adicionar</button>
+        <p><span>Descrição sobre o filme: </span></p>
+
+        <label for="Nome do filme">Nome do Filme</label>
+        <input
+          type="text"
+          name="nomedofilme"
+          id="nomedofilme"
+          placeholder="Nome do filme"
+        />
+        <label for="Nota do filme">Nota do filme</label>
+        <input
+          type="text"
+          name="notafilme"
+          id="notafilme"
+          placeholder="Nota do filme"
+        />
+        <label for="Sobre o filme">Sobre o filme</label>
+        <input
+          type="text"
+          name="sobrefilme"
+          id="sobrefilme"
+          placeholder="Sobre o filme"
+        />
+        <label for="Data de lançamento">Data de lançamento</label>
+        <input
+          type="text"
+          name="datalancamento"
+          id="datalancamento"
+          placeholder="Data de lançamento"
+        />
+        <label for="Link da imagem">Link da imagem</label>
+        <input
+          type="text"
+          name="linkimagem"
+          id="linkimagem"
+          placeholder="Link da imagem"
+        />
+        <p id="link-da-imagem-errado"></p>
+
+        <label for="Link do trailer">Link do trailer(Opcional)</label>
+        <input
+          type="text"
+          name="linktrailer"
+          id="linktrailer"
+          placeholder="Link do trailer"
+        />
+        
+        <p id="erro"></p>
+        <p id="sucesso"></p>
+        <div>
+          <button type="submit" onclick="adicionarFilme()" id='button-enviar'>Adicionar</button>
+          <button onclick="limpaCampos()" id='button-reset'>Resetar campos</button>
+        </div>
       </div>
-      <!-- <button onclick="removerFilme()">Remover o filme</button> -->
-      <!-- Botão para remover o filme nas imagens staticas-->
     </div>
+    <div class="div-filmes" id="div-filmes"></div>
     <!-- <p>Personagens dinamicos: Basta insrir o nome do personagem da Marvel para adicionar</p> -->
   </body>
   <script src="assets/js/script.js"></script>
