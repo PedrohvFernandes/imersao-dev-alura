@@ -295,6 +295,7 @@ function removerFilme(event) {
     }
   }
   console.log(listaFilmes);
+  console.log(event.target.parentNode.parentNode.parentNode);
   // Removemos os parentes nó arvore -> removendo a div que é o container de tudo
   event.target.parentNode.parentNode.parentNode.remove();
 }
