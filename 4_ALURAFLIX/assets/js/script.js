@@ -130,7 +130,7 @@ function exibir() {
   <div class='descricao-filme-container'>
     <div class='descricao-filme'>
       <p><span>Nome do filme:</span>${item.descricao.Nome}</p>
-      <p><span>Nota: </span>${item.descricao.Nota}% gostaram desse filme</p>
+      <p><span>Nota: </span>${item.descricao.Nota} gostaram desse filme</p>
       <p><span>Sobre: </span>${item.descricao.Sobre}</p>
       <p><span>Data de lançamento: </span>${item.descricao.Data}</p>
     </div>
@@ -145,6 +145,7 @@ function exibir() {
     src="${item.linkvideo}"
     frameborder="0"
     allowfullscreen
+    name="${item.descricao.Nome}"
     >
     </iframe>
 
@@ -184,7 +185,7 @@ function validaCampos() {
 
   document.getElementById("notafilme").onkeypress = function (e) {
     let chr = String.fromCharCode(e.which);
-    if ("1234567890".indexOf(chr) < 0) return false;
+    if ("%1234567890".indexOf(chr) < 0) return false;
   };
 
   document.getElementById("sobrefilme").onkeypress = function (e) {
@@ -197,7 +198,7 @@ function validaCampos() {
       return false;
   };
 
-  document.getElementById("sobrefilme").onkeypress = function (e) {
+  document.getElementById("datalancamento").onkeypress = function (e) {
     let chr = String.fromCharCode(e.which);
     if (
       "/1234567890qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM".indexOf(
@@ -278,6 +279,9 @@ function jaExiste(dadosNome, img) {
 // Remove o filme da lista
 function removerFilme(event) {
   let divFilmes = document.querySelector(".descricao-filme");
+
+  // https://www.devmedia.com.br/trabalhando-com-dom-em-javascript/29039 https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction http://www.w3big.com/pt/htmldom/htmldom-properties.html
+  // http://devfuria.com.br/javascript/dom/ https://tableless.com.br/entendendo-o-dom-document-object-model/
   // Pegando o filho do divFilmes que é o P depois o texto da posição 1 no caso o nome do filme pois o split pega o que esta vindo apos o :, e o [1], pega o conteudo da posição 1
   let name = divFilmes.children[0].innerText.split(":")[1];
   console.log(name);
@@ -290,6 +294,7 @@ function removerFilme(event) {
       listaFilmes.splice(i, 1);
     }
   }
+  console.log(listaFilmes);
   // Removemos os parentes nó arvore -> removendo a div que é o container de tudo
   event.target.parentNode.parentNode.parentNode.remove();
 }
