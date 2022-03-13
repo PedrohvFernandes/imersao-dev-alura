@@ -9,8 +9,7 @@ let listaFilmes = [
     },
     linkimagem:
       "https://br.web.img2.acsta.net/pictures/19/07/23/20/57/4907896.jpg",
-    linkvideo:
-      "https://www.youtube.com/embed/Y-cLCyrXhlI?html5=1&enablejsapi=1",
+    linkvideo: "Y-cLCyrXhlI",
   },
   {
     descricao: {
@@ -22,8 +21,7 @@ let listaFilmes = [
     },
     linkimagem:
       "https://br.web.img3.acsta.net/medias/nmedia/18/91/90/98/20169244.jpg",
-    linkvideo:
-      "https://www.youtube.com/embed/TExoc0MG4I4?html5=1&enablejsapi=1",
+    linkvideo: "TExoc0MG4I4",
   },
 
   {
@@ -36,8 +34,7 @@ let listaFilmes = [
     },
     linkimagem:
       "https://s2.glbimg.com/fCNS_fXPhGRwlpnAaQLzvGYC1y0=/362x536/https://s2.glbimg.com/UPI9xlM9R9O41YRqSO7R3hTNk_s=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2020/q/V/Avo9ISQQO3grnARi3JCA/2020-914-a-chegada-poster.jpg",
-    linkvideo:
-      "https://www.youtube.com/embed/rNciXGzYZms?html5=1&enablejsapi=1",
+    linkvideo: "rNciXGzYZms",
   },
 ];
 
@@ -142,7 +139,7 @@ function exibir() {
 
     <iframe
     class="frame-youtube"
-    src="${item.linkvideo}"
+    src="https://www.youtube.com/embed/${item.linkvideo}?html5=1&enablejsapi=1"
     frameborder="0"
     allowfullscreen
     name="${item.descricao.Nome}"
@@ -305,10 +302,19 @@ function toggleVideo(state) {
   // if state == 'hide', hide. Else: show video
   let div = document.getElementById("iframe");
   let iframebotton = document.getElementById("iframebotton");
+
+  // contenteWindow -> A propriedade contentWindow retorna o objeto Window de um HTMLIFrameElement. Você pode usar este objeto Window para acessar o documento do
+  // iframe e seu DOM interno. Este atributo é somente leitura, mas suas propriedades podem ser manipuladas como o objeto global Window.
+  // (property) HTMLIFrameElement.contentWindow: Window
+  //  https://stackoverflow.com/questions/17197084/difference-between-contentdocument-and-contentwindow-javascript-iframe-frame-acc
+  // https://developer.mozilla.org/en-US/docs/Web/API/Window/frames
   let iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+  console.log(iframe);
+
   div.style.display = state == "hide" ? "none" : "block";
   iframebotton.style.display = state == "hide" ? "none" : "block";
   func = state == "hide" ? "pauseVideo" : "playVideo";
+  // O postMessage é um argumento do objeto iframe
   iframe.postMessage(
     '{"event":"command","func":"' + func + '","args":""}',
     "*"
