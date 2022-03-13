@@ -39,6 +39,9 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
+#### Bugs que ainda persiste na aplicação:
+- O trailer dos filmes na lista de objetos so aparece do primeiro iframe na arvore do DOM quando é clicado no botão "Ver o trailer"
+- A exclusão se não for de forma sequencial ela não exclui o ultimo da lista
 #### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/vYWoWRd
 
 ## Tecnologias:
