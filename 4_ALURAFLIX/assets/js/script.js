@@ -53,6 +53,7 @@ function adicionarFilme() {
   // 1ºVerifica se esta vazio o campo
   // 2º Verificar se inseriu o link da imagem corretamente
   // 3º Verificar se existe o filme
+  // 4º Muda o link do youtube
   if (
     verificaCampos(
       dadosNome,
@@ -72,7 +73,7 @@ function adicionarFilme() {
           Data: dadosData,
         },
         linkimagem: urlImg,
-        linkvideo: urlTrailer,
+        linkvideo: mudarLinkYoutube(urlTrailer),
       });
 
       exibir();
@@ -271,6 +272,14 @@ function jaExiste(dadosNome, img) {
   return listaFilmes.some(function (e) {
     return e.descricao.Nome === dadosNome || e.linkimagem === img;
   });
+}
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/substr
+// https://www.devmedia.com.br/javascript-substring-selecionando-parte-de-uma-string/39232
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
+function mudarLinkYoutube(link) {
+  // link.substr(32) -> pode usar esse aqui tambem
+  return link.substring(link.indexOf("=") + 1);
 }
 
 // Remove o filme da lista
