@@ -107,17 +107,18 @@ function exibir() {
     divConteudo.innerHTML += `
     
   <div class='div-imagem-filme'>
-      <button
-      onclick="toggleVideo('hide', event)"
-      role="button"
-      class="botao btn iframebotton"
-      id="iframebotton"
-    >
-      <i class="fa-solid fa-xmark"></i>
-      FECHAR O TRAILER
-    </button>
+
     <div class='div-button-img'>
       <div class='div-button'>
+        <button
+        onclick="toggleVideo('hide', event)"
+        role="button"
+        class="botao btn iframebotton"
+        id="iframebotton"
+      >
+        <i class="fa-solid fa-xmark"></i>
+        FECHAR O TRAILER
+        </button>
         <button onclick="toggleVideo('',event)" role="button" class="botao btn">Ver o trailer</button>
         <button onclick="removerFilme(event)" role="button" class="botao btn">Remover filme</button>
       </div>
@@ -310,29 +311,27 @@ function removerFilme(event) {
 function toggleVideo(state, event) {
   // if state == 'hide', hide. Else: show video
 
-  // let divImagemFilme = document.querySelector('.div-imagem-filme');
-
   // contenteWindow -> A propriedade contentWindow retorna o objeto Window de um HTMLIFrameElement. Você pode usar este objeto Window para acessar o documento do
   // iframe e seu DOM interno. Este atributo é somente leitura, mas suas propriedades podem ser manipuladas como o objeto global Window.
   // (property) HTMLIFrameElement.contentWindow: Window
   //  https://stackoverflow.com/questions/17197084/difference-between-contentdocument-and-contentwindow-javascript-iframe-frame-acc
   //  https://developer.mozilla.org/en-US/docs/Web/API/Window/frames
-  
+
   // console.log(event.target.parentNode.parentNode.parentNode)
   // let iframe = divImagemFilme.getElementsByTagName("iframe")[0].contentWindow;
 
   let iframe = document.getElementsByTagName("iframe")[0].contentWindow;
 
-  console.log(event.target.parentNode.parentNode.parentNode.children[0])
-  console.log(event.target.parentNode.parentNode.parentNode.children[3])
-  console.log(event.target.parentNode.parentNode.parentNode.children[3].children[0])
-  // console.log(divImagemFilme.children[0])
-  // console.log(divImagemFilme.children[3])
-  // console.log(divImagemFilme.children[3].children[0])
+  // Button de tirar o video
+  console.log(event.target.parentNode.children[0]);
+  // Div do iframe
+  console.log(
+    event.target.parentNode.parentNode.parentNode.children[2]
+  );
 
-  let button = event.target.parentNode.parentNode.parentNode.children[0]
-  let divIframe = event.target.parentNode.parentNode.parentNode.children[3]
-  
+  let button = event.target.parentNode.children[0];
+  let divIframe = event.target.parentNode.parentNode.parentNode.children[2];
+
   button.style.display = state == "hide" ? "none" : "block";
   divIframe.style.display = state == "hide" ? "none" : "block";
 

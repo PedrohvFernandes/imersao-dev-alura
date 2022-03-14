@@ -21,7 +21,6 @@
 </p>
 
 #### Bugs que ainda persiste na aplicação:
-- O trailer dos filmes aparecem, mas não consigo tirar o trailer da tela
 - A exclusão se não for de forma sequencial ela não exclui o ultimo da lista
 
 #### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/vYWoWRd
