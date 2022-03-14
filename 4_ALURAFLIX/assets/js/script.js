@@ -108,7 +108,7 @@ function exibir() {
     
   <div class='div-imagem-filme'>
       <button
-      onclick="toggleVideo('hide')"
+      onclick="toggleVideo('hide', event)"
       role="button"
       class="botao btn iframebotton"
       id="iframebotton"
@@ -118,7 +118,7 @@ function exibir() {
     </button>
     <div class='div-button-img'>
       <div class='div-button'>
-        <button onclick="toggleVideo()" role="button" class="botao btn">Ver o trailer</button>
+        <button onclick="toggleVideo('',event)" role="button" class="botao btn">Ver o trailer</button>
         <button onclick="removerFilme(event)" role="button" class="botao btn">Remover filme</button>
       </div>
       <img class='filmes-imgs' src=${item.linkimagem}>
@@ -307,22 +307,36 @@ function removerFilme(event) {
 }
 
 // Trailer fo filme
-function toggleVideo(state) {
+function toggleVideo(state, event) {
   // if state == 'hide', hide. Else: show video
-  let div = document.getElementById("iframe");
-  let iframebotton = document.getElementById("iframebotton");
+
+  // let divImagemFilme = document.querySelector('.div-imagem-filme');
 
   // contenteWindow -> A propriedade contentWindow retorna o objeto Window de um HTMLIFrameElement. Você pode usar este objeto Window para acessar o documento do
   // iframe e seu DOM interno. Este atributo é somente leitura, mas suas propriedades podem ser manipuladas como o objeto global Window.
   // (property) HTMLIFrameElement.contentWindow: Window
   //  https://stackoverflow.com/questions/17197084/difference-between-contentdocument-and-contentwindow-javascript-iframe-frame-acc
-  // https://developer.mozilla.org/en-US/docs/Web/API/Window/frames
-  let iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-  console.log(iframe);
+  //  https://developer.mozilla.org/en-US/docs/Web/API/Window/frames
+  
+  // console.log(event.target.parentNode.parentNode.parentNode)
+  // let iframe = divImagemFilme.getElementsByTagName("iframe")[0].contentWindow;
 
-  div.style.display = state == "hide" ? "none" : "block";
-  iframebotton.style.display = state == "hide" ? "none" : "block";
-  func = state == "hide" ? "pauseVideo" : "playVideo";
+  let iframe = document.getElementsByTagName("iframe")[0].contentWindow;
+
+  console.log(event.target.parentNode.parentNode.parentNode.children[0])
+  console.log(event.target.parentNode.parentNode.parentNode.children[3])
+  console.log(event.target.parentNode.parentNode.parentNode.children[3].children[0])
+  // console.log(divImagemFilme.children[0])
+  // console.log(divImagemFilme.children[3])
+  // console.log(divImagemFilme.children[3].children[0])
+
+  let button = event.target.parentNode.parentNode.parentNode.children[0]
+  let divIframe = event.target.parentNode.parentNode.parentNode.children[3]
+  
+  button.style.display = state == "hide" ? "none" : "block";
+  divIframe.style.display = state == "hide" ? "none" : "block";
+
+  let func = state == "hide" ? "pauseVideo" : "playVideo";
   // O postMessage é um argumento do objeto iframe
   iframe.postMessage(
     '{"event":"command","func":"' + func + '","args":""}',
