@@ -47,6 +47,9 @@ function adicionarFilme() {
   let dadosData = document.getElementById("datalancamento").value;
   let urlImg = document.getElementById("linkimagem").value;
   let urlTrailer = document.getElementById("linktrailer").value;
+  if(urlTrailer === ''){
+    urlTrailer = 'RqJVa0fl01w'
+  }
   let erro = document.getElementById("erro");
   let sucesso = document.getElementById("sucesso");
 
@@ -320,14 +323,17 @@ function toggleVideo(state, event) {
   // console.log(event.target.parentNode.parentNode.parentNode)
   // let iframe = divImagemFilme.getElementsByTagName("iframe")[0].contentWindow;
 
-  let iframe = document.getElementsByTagName("iframe")[0].contentWindow;
+  // let iframe = document.getElementsByTagName("iframe")[0].contentWindow;
 
+  let iframe = event.target.parentNode.parentNode.parentNode.children[2].children[0].contentWindow
   // Button de tirar o video
   console.log(event.target.parentNode.children[0]);
   // Div do iframe
   console.log(
     event.target.parentNode.parentNode.parentNode.children[2]
   );
+  // iframe
+  console.log(event.target.parentNode.parentNode.parentNode.children[2].children[0])
 
   let button = event.target.parentNode.children[0];
   let divIframe = event.target.parentNode.parentNode.parentNode.children[2];

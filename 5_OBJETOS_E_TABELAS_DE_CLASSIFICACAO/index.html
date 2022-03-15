@@ -9,7 +9,23 @@
   </head>
   <body>
     <h1>Tabela de classificação</h1>
+    <div class="tabela-de-pontuacao">
+      <h2>Tabela de pontos:</h2>
+      <p>Vitória = 3 pontos</p>
 
+      <p>Empate = 1 ponto</p>
+
+      <p>Derrota = 0 ponto</p>
+    </div>
+    <button class="button-derrota button-limpar" onClick="limpar()">
+      Limpar Todos os pontos dos jogadores
+    </button>
+    <button class="button-vitoria" onClick="addJogador()">
+      Adicionar novo jogador
+    </button>
+    <button class="button-derrota button-limpar" onClick="limparJogadores()">
+      Limpar jogadores
+    </button>
     <table style="width: 100%">
       <thead>
         <tr>
@@ -18,11 +34,13 @@
           <th>Empates</th>
           <th>Derrotas</th>
           <th>Pontos</th>
-          <th colspan="3">Ações</th>
+          <th colspan="2">Ações</th>
+          <th>Limpar individual</th>
+          <th>Deletar jogador</th>
         </tr>
       </thead>
       <tbody id="tabelaJogadores">
-        <tr>
+        <!-- <tr>
           <td>Paulo</td>
           <td></td>
           <td></td>
@@ -31,8 +49,8 @@
           <td><button onClick="adicionarVitoria()">Vitória</button></td>
           <td><button onClick="adicionarEmpate()">Empate</button></td>
           <td><button onClick="adicionarDerrota()">Derrota</button></td>
-        </tr>
-        <tr>
+        </tr> -->
+        <!-- <tr>
           <td>Rafa</td>
           <td></td>
           <td></td>
@@ -41,9 +59,28 @@
           <td><button onClick="adicionarVitoria()">Vitória</button></td>
           <td><button onClick="adicionarEmpate()">Empate</button></td>
           <td><button onClick="adicionarDerrota()">Derrota</button></td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
+    <div class="container-div" id="container-div">
+      <div class="div-inputs">
+        <div class="button-fechar">
+          <img onClick="fecharAddJogador()" src="assets/img/x-10366.svg" />
+        </div>
+        <p id="ja-existe-jogador"></p>
+        <input id="nome" type="text" placeholder="Nome do jogador" />
+        <p id="nome-jogador-errado"></p>
+        <input
+          id="imagem"
+          type="text"
+          placeholder="URL da imagem: JPEG, JPG ou PNG"
+        />
+        <p id="link-da-imagem-errado"></p>
+        <button onclick="enviarJogador()" class="button-vitoria">
+          Adicionar
+        </button>
+      </div>
+    </div>
   </body>
   <script src="assets/js/script.js"></script>
 </html>
