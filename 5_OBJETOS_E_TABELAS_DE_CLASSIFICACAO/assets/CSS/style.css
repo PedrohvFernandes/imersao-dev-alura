@@ -20,6 +20,11 @@ img {
   border-radius: 20px;
 }
 
+#campeao{
+  color: yellow;
+  font-size: 40px;
+}
+
 .container {
   text-align: center;
   padding: 20px;

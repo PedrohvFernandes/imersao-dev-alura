@@ -73,6 +73,7 @@ function adicionarVitoria(i) {
 
   atualizarPontos(jogador);
   exibeJogadoresTela(listaJogadores);
+  mostraCampeao();
 }
 
 // function adicionarEmpate(i) {
@@ -88,6 +89,7 @@ function adicionarEmpate() {
     atualizarPontos(listaJogadores[i]);
   }
   exibeJogadoresTela(listaJogadores);
+  mostraCampeao();
 }
 
 function atualizarPontos(jogador) {
@@ -219,4 +221,20 @@ function removerJogador(i) {
   exibeJogadoresTela(listaJogadores);
   console.log(listaJogadores);
   console.log(listaJogadores[i]);
+}
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+// O método reduce() executa uma função reducer (fornecida por você) para cada elemento do array, resultando num único valor de retorno.
+function mostraCampeao() {
+  let ganhador = document.getElementById("campeao");
+  const champion = listaJogadores.reduce(function (prev, current) {
+    if(prev.pontos > current.pontos) {
+      return prev
+    } else if(prev.pontos < current.pontos){
+        return current
+    }else if(prev.pontos === current.pontos){
+        ganhador.innerHTML = "EMPATE!!!";
+        return
+    }
+  });
+  ganhador.innerHTML = "O campeão é " + champion.nome + "!";
 }

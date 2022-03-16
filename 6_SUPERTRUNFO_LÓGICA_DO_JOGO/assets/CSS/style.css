@@ -7,13 +7,13 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  min-height: 854px;
-  background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png');
-  background-color: #000000;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  padding-bottom: 20vh;
+  background-image: url('https://i.pinimg.com/originals/8a/2a/bf/8a2abf356ef2ec50f90b755234e26357.png');
+	background-color: #000000;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+  min-height: 969px;
+  backdrop-filter: blur(5px);
 }
 
 .container {
@@ -32,6 +32,11 @@ button {
   border-radius: 5px;
   border: none;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
 }
 
 h2 {
