@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;;
+	min-height: 854px;
+	background-image: url("https://i.pinimg.com/originals/f6/a1/8a/f6a18ac56651ce4f9ca7e0230706a0b6.png");
+	background-color: #000000;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.container {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	padding: 20px;
+}
+
+.page-title {
+	color: #ffffff;
+	margin: 5px 0;
+	text-shadow: 0 0 5px #000;
+}
+
+button {
+	padding: 0.8rem 1.5rem;
+	margin: 1rem 0;
+	border-radius: 5px;
+	border: none;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+h2 {
+	color: white;
+}
+
+/*  */
+
+.painel {
+	display: flex;
+	margin: 50px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.formulario {
+	padding: 1em;
+	margin: 0 auto;
+	background-color: #f3f3f390;
+	border-radius: 15px;
+}
+
+.formulario__caixa {
+	display: grid;
+	max-width: 600px;
+	margin: 0 auto;
+	grid-template-columns: 1fr 0.3fr;
+	column-gap: 32px;
+	box-sizing: border-box;
+}
+
+.formulario__caixa-botao {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	row-gap: 16px;
+}
+
+.formulario__label {
+	display: block;
+    margin-bottom: 10px;
+	text-align: start;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+	grid-column: span 2;
+}
+
+.formulario__input {
+	display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+	box-sizing: border-box;
+	grid-column: span 2;
+}
+
+.formulario__caixa-input input:last-child {
+	margin: 0;
+}
+
+.formulario__input--erro {
+	border: 2px solid #f00;
+}
+
+.formulario__botao {
+	display: block;
+	width: 100%;
+    text-align: center;
+    padding: 7.5px 15px;
+    background-color: #059bc0;
+    border: none;
+    border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+	cursor: pointer;
+    transition: 0.25s;
+}
+
+.formulario__botao--resetar {
+	background-color: #a70000;
+}
+
+.formulario__botao:hover {
+	transform: scale(0.95);
+	background-color: #0082a3;
+}
+
+.formulario__botao--resetar:hover {
+	background-color: #720000;
+}
+
+.formulario__resultado{
+	display: none;
+	padding: 1em;
+	margin-top: 2em;
+	margin-bottom: 0;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.formulario__resultado-derrota--ativo {
+	display: block;
+	background-color: #BF300F;
+}
+
+.formulario__resultado-vitoria--ativo {
+	display: block;
+	background-color: #03974f;
+}
+
+/* TABELA */
+
+.tabela__classificacao {
+	max-width: 65%;
+	margin: 0 auto;
+	border: none;
+	border-radius: 15px;
+	border-spacing: 0 0.5rem;
+	font-size: 1rem;
+}
+
+.tabela__linha {
+	background-color: #fff;
+}
+
+.tabela__linha td:first-child, .tabela__linha th:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+.tabela__linha td:last-child, .tabela__linha th:last-child {
+	border-radius: 0 5px 5px 0;
+}
+
+.tabela__linha--cabecalho {
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+th {
+	width: 150px;
+	padding: 0.25em;
+}
+
+th:first-child {
+	padding-left: 30px;
+}
+
+td {
+	padding: 1em;
+}
+
+.tabela__nome-time {
+	width: 200px;
+	text-align: left;
+	text-transform: uppercase;
+	padding-left: 70px;
+    background-size: 30px;
+    background-position: 20px;
+    background-repeat: no-repeat;
+	font-weight: bold;
+}
+
+/* JOGO */
+
+.jogo__botao {
+	background-color: #fff;
+	box-shadow: 0 0 5px #000;
+	text-shadow: 0 0 2px #fff;
+	font-weight: bold;
+	transition: 0.25s;
+}
+
+.jogo__botao:hover {
+	transform: scale(0.95);
+	background-color: #e3e3e3;
+}
+
+/*  */
+
+.exibicao {
+	display: flex;
+	margin: 50px auto;
+	align-items: center;
+	justify-content: space-between;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.exibicao--ativo {
+	opacity: 1;
+}
+
+.carta {
+	display: flex;
+	width: 150px;
+	height: 300px;
+	padding: 25px 50px;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 0 10px #000;
+	border-radius: 15px;
+	color: #fff;
+	background: linear-gradient(45deg, #69ace3, #0b025e 60%, #fff 50%);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+.carta:hover {
+	transform: scale(1.05);
+}
+
+.carta__nome {
+	color: #000;
+	text-shadow: 0 0 2px #8c8c8c;
+}
+
+.carta__imagem {
+	width: 100px;
+	max-height: 100px;
+	align-self: center;
+}
+
+.carta__atributos {
+	display: grid;
+	grid-template-columns: auto 1fr 1fr;
+	grid-template-rows: 30px 30px 30px;
+	column-gap: 8px;
+	align-items: center;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+.carta__robo-atributos {
+	grid-template-columns: 1fr 1fr;
+}
+
+.carta__atributos .carta__atributo {
+	justify-self: flex-end;
+}
