@@ -53,14 +53,23 @@
 
 #### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/NWXPBBy
 
-### Projeto 6: SUPERTRUNFO - LÓGICA DO JOGO
+### Projeto 6 e 7: SUPERTRUNFO - LÓGICA DO JOGO
 <p align="start">
   <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen6.png">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
+<p align="start">
+  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen6Base.png">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
 
-#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/zYpGmQR
+### Credito do projeto: https://codepen.io/gustavobiolcatti/pen/LYeVjqL
+#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/zYpGmQR OU a base https://codepen.io/pedrohvfernandes/pen/ZEvQBmW?editors=0010
+
+
+
+
 ## Tecnologias:
 - HTML
 - CSS

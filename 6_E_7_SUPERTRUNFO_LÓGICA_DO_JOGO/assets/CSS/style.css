@@ -52,6 +52,10 @@ h2 {
 	border-radius: 15px;
 }
 
+.formulario #nome-nao-valido{
+	display: none;
+}
+
 .formulario__caixa {
 	display: grid;
 	max-width: 600px;

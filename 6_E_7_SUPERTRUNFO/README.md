@@ -16,12 +16,11 @@
 
 ### Projeto 6 e 7: SUPERTRUNFO - LÓGICA DO JOGO
 <p align="start">
-  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen6.png">
+  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen6Base.png">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
-### Credito do projeto: https://codepen.io/gustavobiolcatti/pen/LYeVjqL
-#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/zYpGmQR OU a base https://codepen.io/imersao-dev/pen/GREGPNb
+#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/ZEvQBmW?editors=0010
 
 ## 👨‍💻 Autor:
 - Linkedin: https://www.linkedin.com/in/pedro-henrique-vieira-fernandes
