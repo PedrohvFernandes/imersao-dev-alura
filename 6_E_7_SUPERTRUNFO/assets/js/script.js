@@ -10,65 +10,77 @@ const cartasJogador = [
   },
 
   {
-    nome: "Darth Vader",
-    imagem: "https://images-na.ssl-images-amazon.com/images/I/51H--lU9YGL.jpg",
-    atributos: {
-      ataque: 9,
-      defesa: 8,
-      poder: 2,
-    },
-  },
-  {
-    nome: "Shiryu de dragão",
-    imagem:
-      "https://img.elo7.com.br/product/zoom/2B30902/camiseta-shiryu-de-dragao-fullprint-nerd.jpg",
-    atributos: {
-      ataque: 5,
-      defesa: 9,
-      poder: 10,
-    },
-  },
-  {
     nome: "nidorino",
     imagem: "https://professorlotus.com/Sprites/Nidorino.gif",
-    atributos: { ataque: 10, defesa: 8, poder: 8 },
+    atributos: { 
+      ataque: 10, 
+      defesa: 8,
+      poder: 8 
+    },
   },
   {
     nome: "nidoking",
     imagem: "https://professorlotus.com/Sprites/Nidoking.gif",
-    atributos: { ataque: 15, defesa: 13, poder: 10 },
+    atributos: { 
+      ataque: 15, 
+      defesa: 13, 
+      poder: 10 
+    },
   },
 
   {
     nome: "poliwag",
     imagem: "https://professorlotus.com/Sprites/Poliwag.gif",
-    atributos: { ataque: 4, defesa: 4, poder: 6 },
+    atributos: { 
+      ataque: 4, 
+      defesa: 4, 
+      poder: 6 
+    },
   },
   {
     nome: "poliwhirl",
     imagem: "https://professorlotus.com/Sprites/Poliwhirl.gif",
-    atributos: { ataque: 7, defesa: 7, poder: 9 },
+    atributos: { 
+      ataque: 7, 
+      defesa: 7, 
+      poder: 9 
+    },
   },
   {
     nome: "poliwrath",
     imagem: "https://professorlotus.com/Sprites/Poliwrath.gif",
-    atributos: { ataque: 12, defesa: 12, poder: 14 },
+    atributos: { 
+      ataque: 12, 
+      defesa: 12, 
+      poder: 14 
+    },
   },
 
   {
     nome: "machop",
     imagem: "https://professorlotus.com/Sprites/Machop.gif",
-    atributos: { ataque: 9, defesa: 6, poder: 8 },
+    atributos: { 
+      ataque: 9, 
+      defesa: 6, 
+      poder: 8 
+    },
   },
   {
     nome: "machoke",
     imagem: "https://professorlotus.com/Sprites/Machoke.gif",
-    atributos: { ataque: 12, defesa: 9, poder: 11 },
+    atributos: { 
+      ataque: 12, 
+      defesa: 9, 
+      poder: 11 
+    },
   },
   {
     nome: "machamp",
     imagem: "https://professorlotus.com/Sprites/Machamp.gif",
-    atributos: { ataque: 17, defesa: 14, poder: 16 },
+    atributos: { 
+      ataque: 17, 
+      defesa: 14, 
+      poder: 16 },
   },
 ];
 const cartasMaquina = [
@@ -83,67 +95,80 @@ const cartasMaquina = [
   },
 
   {
-    nome: "Darth Vader",
-    imagem: "https://images-na.ssl-images-amazon.com/images/I/51H--lU9YGL.jpg",
-    atributos: {
-      ataque: 9,
-      defesa: 8,
-      poder: 2,
-    },
-  },
-  {
-    nome: "Shiryu de dragão",
-    imagem:
-      "https://img.elo7.com.br/product/zoom/2B30902/camiseta-shiryu-de-dragao-fullprint-nerd.jpg",
-    atributos: {
-      ataque: 5,
-      defesa: 9,
-      poder: 10,
-    },
-  },
-  {
     nome: "nidorino",
     imagem: "https://professorlotus.com/Sprites/Nidorino.gif",
-    atributos: { ataque: 10, defesa: 8, poder: 8 },
+    atributos: { 
+      ataque: 10, 
+      defesa: 8,
+      poder: 8 
+    },
   },
   {
     nome: "nidoking",
     imagem: "https://professorlotus.com/Sprites/Nidoking.gif",
-    atributos: { ataque: 15, defesa: 13, poder: 10 },
+    atributos: { 
+      ataque: 15, 
+      defesa: 13, 
+      poder: 10 
+    },
   },
 
   {
     nome: "poliwag",
     imagem: "https://professorlotus.com/Sprites/Poliwag.gif",
-    atributos: { ataque: 4, defesa: 4, poder: 6 },
+    atributos: { 
+      ataque: 4, 
+      defesa: 4, 
+      poder: 6 
+    },
   },
   {
     nome: "poliwhirl",
     imagem: "https://professorlotus.com/Sprites/Poliwhirl.gif",
-    atributos: { ataque: 7, defesa: 7, poder: 9 },
+    atributos: { 
+      ataque: 7, 
+      defesa: 7, 
+      poder: 9 
+    },
   },
   {
     nome: "poliwrath",
     imagem: "https://professorlotus.com/Sprites/Poliwrath.gif",
-    atributos: { ataque: 12, defesa: 12, poder: 14 },
+    atributos: { 
+      ataque: 12, 
+      defesa: 12, 
+      poder: 14 
+    },
   },
 
   {
     nome: "machop",
     imagem: "https://professorlotus.com/Sprites/Machop.gif",
-    atributos: { ataque: 9, defesa: 6, poder: 8 },
+    atributos: { 
+      ataque: 9, 
+      defesa: 6, 
+      poder: 8 
+    },
   },
   {
     nome: "machoke",
     imagem: "https://professorlotus.com/Sprites/Machoke.gif",
-    atributos: { ataque: 12, defesa: 9, poder: 11 },
+    atributos: { 
+      ataque: 12, 
+      defesa: 9, 
+      poder: 11 
+    },
   },
   {
     nome: "machamp",
     imagem: "https://professorlotus.com/Sprites/Machamp.gif",
-    atributos: { ataque: 17, defesa: 14, poder: 16 },
+    atributos: { 
+      ataque: 17, 
+      defesa: 14, 
+      poder: 16 },
   },
 ];
+
 console.log(cartasMaquina);
 console.log(cartasJogador);
 let cartaMaquina;
@@ -167,6 +192,9 @@ function sortearCarta() {
   exbibirCarta('jogador')
   resetMaquina();
   resetResultado();
+
+  let audio = document.getElementById('player')
+  audio.play();
 }
 
 function exbibirCarta(jogador){

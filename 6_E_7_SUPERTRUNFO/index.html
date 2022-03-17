@@ -11,7 +11,7 @@
         class="page-logo"
         alt=""
       />
-      <h1 class="page-title">Super Trunfo Varios personsagens :D</h1>
+      <h1 class="page-title">Super Trunfo Pokemon :D</h1>
       <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
       <form id="form">
         <h2>Escolha o seu atributo</h2>
@@ -34,18 +34,23 @@
             </div>
           </div>
         </div>
-        <button
-          class="button-jogar"
-          type="button"
-          id="btnJogar"
-          onclick="jogar()"
-          disabled="false"
-        >
-          Jogar
-        </button>
+        <div>
+          <button
+            class="button-jogar"
+            type="button"
+            id="btnJogar"
+            onclick="jogar()"
+            disabled="false"
+          >
+            Jogar
+          </button>
+        </div>
         <div id="resultado"></div>
       </form>
     </div>
+    <!-- https://www.televisiontunes.com/Pokemon.html  ir em inpensional elemento ir na div com o id jquery_jplayer_2 assim você consegue achar o audio-->
+    <audio src="https://www.televisiontunes.com/uploads/audio/Pokemon.mp3" id="player" loop>
+    </audio>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
