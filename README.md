@@ -1,6 +1,6 @@
 # IMERSÃO DEV_ 👨‍💻 
 
-## Projetos criados na IMERSÃO DEV_ com a @Alura @rafaballerini @peas 
+## Projetos criados na IMERSÃO DEV_ com a @Alura @rafaballerini @peas e @guilhermeonrails
 
 <p align="center">
   <img height="50" src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/logo/logo-imersao-dev-desktop.1636535198.svg">
