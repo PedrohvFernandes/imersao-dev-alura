@@ -1,7 +1,8 @@
 const cartasJogador = [
   {
     nome: "Bulbasauro",
-    imagem: "https://i.gifer.com/origin/fe/fe4ebd8a9c0547e94000a9c759acf591.gif",
+    imagem:
+      "https://i.gifer.com/origin/fe/fe4ebd8a9c0547e94000a9c759acf591.gif",
     atributos: {
       ataque: 7,
       defesa: 8,
@@ -12,81 +13,83 @@ const cartasJogador = [
   {
     nome: "nidorino",
     imagem: "https://professorlotus.com/Sprites/Nidorino.gif",
-    atributos: { 
-      ataque: 10, 
+    atributos: {
+      ataque: 10,
       defesa: 8,
-      poder: 8 
+      poder: 8,
     },
   },
   {
     nome: "nidoking",
     imagem: "https://professorlotus.com/Sprites/Nidoking.gif",
-    atributos: { 
-      ataque: 15, 
-      defesa: 13, 
-      poder: 10 
+    atributos: {
+      ataque: 15,
+      defesa: 13,
+      poder: 10,
     },
   },
 
   {
     nome: "poliwag",
     imagem: "https://professorlotus.com/Sprites/Poliwag.gif",
-    atributos: { 
-      ataque: 4, 
-      defesa: 4, 
-      poder: 6 
+    atributos: {
+      ataque: 4,
+      defesa: 4,
+      poder: 6,
     },
   },
   {
     nome: "poliwhirl",
     imagem: "https://professorlotus.com/Sprites/Poliwhirl.gif",
-    atributos: { 
-      ataque: 7, 
-      defesa: 7, 
-      poder: 9 
+    atributos: {
+      ataque: 7,
+      defesa: 7,
+      poder: 9,
     },
   },
   {
     nome: "poliwrath",
     imagem: "https://professorlotus.com/Sprites/Poliwrath.gif",
-    atributos: { 
-      ataque: 12, 
-      defesa: 12, 
-      poder: 14 
+    atributos: {
+      ataque: 12,
+      defesa: 12,
+      poder: 14,
     },
   },
 
   {
     nome: "machop",
     imagem: "https://professorlotus.com/Sprites/Machop.gif",
-    atributos: { 
-      ataque: 9, 
-      defesa: 6, 
-      poder: 8 
+    atributos: {
+      ataque: 9,
+      defesa: 6,
+      poder: 8,
     },
   },
   {
     nome: "machoke",
     imagem: "https://professorlotus.com/Sprites/Machoke.gif",
-    atributos: { 
-      ataque: 12, 
-      defesa: 9, 
-      poder: 11 
+    atributos: {
+      ataque: 12,
+      defesa: 9,
+      poder: 11,
     },
   },
   {
     nome: "machamp",
     imagem: "https://professorlotus.com/Sprites/Machamp.gif",
-    atributos: { 
-      ataque: 17, 
-      defesa: 14, 
-      poder: 16 },
+    atributos: {
+      ataque: 17,
+      defesa: 14,
+      poder: 16,
+    },
   },
 ];
 const cartasMaquina = [
   {
     nome: "Bulbasauro",
-    imagem: "https://i.gifer.com/origin/fe/fe4ebd8a9c0547e94000a9c759acf591.gif",
+    imagem:
+      "https://i.gifer.com/origin/fe/fe4ebd8a9c0547e94000a9c759acf591.gif",
     atributos: {
       ataque: 7,
       defesa: 8,
@@ -97,75 +100,76 @@ const cartasMaquina = [
   {
     nome: "nidorino",
     imagem: "https://professorlotus.com/Sprites/Nidorino.gif",
-    atributos: { 
-      ataque: 10, 
+    atributos: {
+      ataque: 10,
       defesa: 8,
-      poder: 8 
+      poder: 8,
     },
   },
   {
     nome: "nidoking",
     imagem: "https://professorlotus.com/Sprites/Nidoking.gif",
-    atributos: { 
-      ataque: 15, 
-      defesa: 13, 
-      poder: 10 
+    atributos: {
+      ataque: 15,
+      defesa: 13,
+      poder: 10,
     },
   },
 
   {
     nome: "poliwag",
     imagem: "https://professorlotus.com/Sprites/Poliwag.gif",
-    atributos: { 
-      ataque: 4, 
-      defesa: 4, 
-      poder: 6 
+    atributos: {
+      ataque: 4,
+      defesa: 4,
+      poder: 6,
     },
   },
   {
     nome: "poliwhirl",
     imagem: "https://professorlotus.com/Sprites/Poliwhirl.gif",
-    atributos: { 
-      ataque: 7, 
-      defesa: 7, 
-      poder: 9 
+    atributos: {
+      ataque: 7,
+      defesa: 7,
+      poder: 9,
     },
   },
   {
     nome: "poliwrath",
     imagem: "https://professorlotus.com/Sprites/Poliwrath.gif",
-    atributos: { 
-      ataque: 12, 
-      defesa: 12, 
-      poder: 14 
+    atributos: {
+      ataque: 12,
+      defesa: 12,
+      poder: 14,
     },
   },
 
   {
     nome: "machop",
     imagem: "https://professorlotus.com/Sprites/Machop.gif",
-    atributos: { 
-      ataque: 9, 
-      defesa: 6, 
-      poder: 8 
+    atributos: {
+      ataque: 9,
+      defesa: 6,
+      poder: 8,
     },
   },
   {
     nome: "machoke",
     imagem: "https://professorlotus.com/Sprites/Machoke.gif",
-    atributos: { 
-      ataque: 12, 
-      defesa: 9, 
-      poder: 11 
+    atributos: {
+      ataque: 12,
+      defesa: 9,
+      poder: 11,
     },
   },
   {
     nome: "machamp",
     imagem: "https://professorlotus.com/Sprites/Machamp.gif",
-    atributos: { 
-      ataque: 17, 
-      defesa: 14, 
-      poder: 16 },
+    atributos: {
+      ataque: 17,
+      defesa: 14,
+      poder: 16,
+    },
   },
 ];
 
@@ -189,20 +193,19 @@ function sortearCarta() {
 
   //   exibirOpcoes();
   // exibirCartaJogador();
-  exbibirCarta('jogador')
+  exbibirCarta("jogador");
   resetMaquina();
   resetResultado();
 
-  let audio = document.getElementById('player')
+  let audio = document.getElementById("player");
   audio.play();
 }
 
-function exbibirCarta(jogador){
-  if(jogador === 'jogador'){
-    exibirCartaJogador()
-
-  }else if(jogador ==='maquina'){
-    exibirCartaMaquina()
+function exbibirCarta(jogador) {
+  if (jogador === "jogador") {
+    exibirCartaJogador();
+  } else if (jogador === "maquina") {
+    exibirCartaMaquina();
   }
 }
 
@@ -230,25 +233,58 @@ function obtemAtributoSelecionado() {
   }
 }
 
+let vitoria = 100;
+let derrota = 100;
+
 function jogar() {
   let atributoSelecionado = obtemAtributoSelecionado();
   let elementoResultado = document.getElementById("resultado");
+  let elementoResultadoParitda = document.getElementById("resultado-partida");
   let valorCartaJogador = cartaJogador.atributos[atributoSelecionado];
   let valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
 
+  let lifeJogador = document.getElementById("life-jogador");
+  let lifeMaquina = document.getElementById("life-maquina");
+
   if (valorCartaJogador > valorCartaMaquina) {
-    elementoResultado.innerHTML = `<p class='resultado-final'>Você venceu</p>`;
+    elementoResultado.innerHTML = `<p class='resultado-final'>Você venceu o round</p>`;
     retirarCarta("usuario");
+    lifeMaquina.innerHTML = `Life: ${(derrota -= 10)}`;
   } else if (valorCartaMaquina > valorCartaJogador) {
-    elementoResultado.innerHTML = `<p class='resultado-final'>Você perdeu, a carta da máquina é maior</p>`;
+    elementoResultado.innerHTML = `<p class='resultado-final'>Você perdeu o round, a carta da máquina é maior</p>`;
     retirarCarta("maquina");
+    lifeJogador.innerHTML = `Life: ${(vitoria -= 10)}`;
   } else {
-    elementoResultado.innerHTML = `<p class='resultado-final'>Empatou</p>`;
+    elementoResultado.innerHTML = `<p class='resultado-final'>Empatou o round</p>`;
   }
   // exibirCartaMaquina();
-  exbibirCarta('maquina')
+  exbibirCarta("maquina");
+
   document.getElementById("btnSortear").disabled = false;
   document.getElementById("btnJogar").disabled = true;
+
+  if (vitoria === 50) {
+    lifeJogador.style.color = "orange";
+  } else if (vitoria === 30) {
+    lifeJogador.style.color = "red";
+  }
+
+  if (derrota === 50) {
+    lifeMaquina.style.color = "orange";
+  } else if (derrota === 30) {
+    lifeMaquina.style.color = "red";
+  }
+
+  if (vitoria === 0) {
+    document.getElementById("fim-do-jogo").play();
+    elementoResultadoParitda.innerHTML = `VOCÊ PERDEU A PARTIDA, TREINE MAIS`;
+
+    resetarTudo();
+  } else if (derrota === 0) {
+    document.getElementById("win").play();
+    elementoResultadoParitda.innerHTML = `VOCÊ GANHOU A PARTIDA`;
+    resetarTudo();
+  }
 }
 
 function exibirCartaJogador() {
@@ -296,6 +332,10 @@ function resetMaquina() {
   }
   let opcoesMaquina = document.getElementById("opcoes-maquina");
   opcoesMaquina.innerHTML = opcoesTexto;
+
+  let moldura =
+    '<img src="https://guloseimasnerds.files.wordpress.com/2017/02/verso-carta-pkm.jpg" style=" width: inherit; height: inherit; position: absolute;">';
+  divCartaMaquina.innerHTML = `${moldura} </div>`;
 }
 
 function resetResultado() {
@@ -329,4 +369,15 @@ function retirarCarta(jogador) {
       }
     }
   }
+}
+
+function resetarTudo() {
+  document.getElementById("btnResetar").disabled = false;
+  document.getElementById("btnSortear").disabled = true;
+  document.getElementById("btnJogar").disabled = true;
+  document.getElementById("player").pause();
+}
+
+function resetar() {
+  document.location.reload(true);
 }

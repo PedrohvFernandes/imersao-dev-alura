@@ -1,13 +1,64 @@
+@font-face {
+  font-family: "Pokemon";
+  src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot");
+  src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon")
+      format("svg");
+}
+
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Pokemon";
   min-height: 854px;
-  background-image: url("https://s2.glbimg.com/F5QGZchmNfbNcLgoSjP8QRgV96M=/0x0:1024x512/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/t/Y/fGsLr7RrqyMVMplacrjw/logo-pokemon-go.jpg");
-  backdrop-filter: blur(10px);
+  background-image: url("https://wallpapercave.com/wp/wp8155232.jpg");
+  backdrop-filter: blur(5px);
   background-color: #000000;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   padding-bottom: 20vh;
+  overflow-x: hidden;
+}
+
+.page-title {
+  font-size: 50px;
+  color: #ffcc03;
+  margin: 5px 0;
+  text-shadow: 3px 3px 2px #2c458c, -3px -3px 2px #2c458c, 4px 4px 3px #2c458c,
+    -4px -4px 3px #2c458c;
+  animation: animaTitle 1.5s ease 1s normal forwards;
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.page-title + h2 {
+  font-size: 40px;
+  color: #ffcc03;
+  margin: 5px 0;
+  text-shadow: 3px 3px 2px #2c458c, -3px -3px 2px #2c458c, 4px 4px 3px #2c458c,
+    -4px -4px 3px #2c458c;
+  animation: animaTitle 1.5s ease 2.5s normal forwards;
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+#btnSortear{
+  animation: animaTitle 1.5s ease 3.5s normal forwards;
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+@keyframes animaTitle {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .container {
@@ -15,12 +66,8 @@ body {
   padding: 20px;
 }
 
-.page-title {
-  color: #ffffff;
-  margin: 5px 0;
-}
-
 button {
+  font-family: 'Pokemon';
   padding: 0.8rem 1.5rem;
   margin: 1rem 0;
   border-radius: 5px;
@@ -45,6 +92,30 @@ button:disabled {
 
 h2 {
   color: white;
+  font-size: 25px;
+}
+
+#life-jogador, #life-maquina{
+  color: #fff;
+  font-size: 20px;
+}
+
+#div-resultado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resultado-final,  #resultado-partida {
+  animation: anima 1.4s linear infinite alternate-reverse;
+  color: #ffcc03;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-shadow: 3px 3px 2px #2c458c, -3px -3px 2px #2c458c, 4px 4px 3px #2c458c,
+  -4px -4px 3px #2c458c;;
+  width: auto;
+  padding: 1rem;
 }
 
 #carta-jogador,
@@ -91,14 +162,10 @@ h2 {
   margin: 20px 10px;
 }
 
-.resultado-final {
-  color: white;
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: bolder;
-  padding: 1rem;
-  border: 2px solid black;
-  background-color: black;
+@keyframes anima {
+  to {
+    transform: scale(1.2);
+  }
 }
 
 .--spacing {
@@ -132,5 +199,5 @@ form {
 }
 
 .carta-status p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }

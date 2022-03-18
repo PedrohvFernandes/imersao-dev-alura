@@ -6,29 +6,31 @@
 
   <body>
     <div class="container">
-      <img
-        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png"
-        class="page-logo"
-        alt=""
-      />
-      <h1 class="page-title">Super Trunfo Pokemon :D</h1>
+      <h1 class="page-title">Super Trunfo</h1>
+      <h2>Pokémon</h2>
       <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
       <form id="form">
         <h2>Escolha o seu atributo</h2>
         <div class="wrapper">
           <div>
-            <div id="carta-jogador">
+            <p id="life-jogador"> Life: 100</p>
+            <div id="carta-jogador"> 
               <img
-                src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                src="https://guloseimasnerds.files.wordpress.com/2017/02/verso-carta-pkm.jpg"
                 style="width: inherit; height: inherit; position: absolute"
               />
               <h3></h3>
             </div>
           </div>
+          <div id="div-resultado">
+            <p id="resultado"></p>
+            <p id="resultado-partida"></p>
+          </div>
           <div>
+            <p id='life-maquina'>Life: 100</p>
             <div id="carta-maquina" class="carta">
               <img
-                src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                src="https://guloseimasnerds.files.wordpress.com/2017/02/verso-carta-pkm.jpg"
                 style="width: inherit; height: inherit; position: absolute"
               />
             </div>
@@ -44,13 +46,24 @@
           >
             Jogar
           </button>
+          <button
+          class="button-jogar"
+          type="button"
+          id="btnResetar"
+          onclick="resetar()"
+          disabled="false"
+        >
+          Resetar
+        </button>
         </div>
-        <div id="resultado"></div>
       </form>
     </div>
     <!-- https://www.televisiontunes.com/Pokemon.html  ir em inpensional elemento ir na div com o id jquery_jplayer_2 assim você consegue achar o audio-->
     <audio src="https://www.televisiontunes.com/uploads/audio/Pokemon.mp3" id="player" loop>
     </audio>
+    <audio src="https://assets.mixkit.co/sfx/preview/mixkit-retro-game-over-1947.mp3" id="fim-do-jogo">
+    </audio>
+    <audio id="win" preload="none" src="https://assets.mixkit.co/sfx/preview/mixkit-medieval-show-fanfare-announcement-226.mp3" style="width: 100%;"></audio>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
