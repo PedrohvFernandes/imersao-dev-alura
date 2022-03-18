@@ -61,19 +61,6 @@
 
 #### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/ZEvQBmW?editors=0010
 
-<p align="start">
-  <img src="https://github.com/PedrohvFernandes/imersao-dev-alura/blob/main/img/screenshot/Screen6.png">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-
-### Credito do projeto: https://codepen.io/gustavobiolcatti/pen/LYeVjqL
-
-### Realizei algumas melhorias nesse
-#### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/zYpGmQR
-
-
-
-
 ## Tecnologias:
 - HTML
 - CSS

@@ -20,6 +20,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
+### Realizei algumas melhorias nesse
 ### Credito do projeto: https://codepen.io/gustavobiolcatti/pen/LYeVjqL
 #### Caso queria testar o projeto(https://codepen.io): https://codepen.io/pedrohvfernandes/pen/zYpGmQR OU a base https://codepen.io/imersao-dev/pen/GREGPNb
 
