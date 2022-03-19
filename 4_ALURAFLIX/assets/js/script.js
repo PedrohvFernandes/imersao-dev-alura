@@ -288,12 +288,20 @@ function mudarLinkYoutube(link) {
 
 // Remove o filme da lista
 function removerFilme(event) {
-  let divFilmes = document.querySelector(".descricao-filme");
+
 
   // https://www.devmedia.com.br/trabalhando-com-dom-em-javascript/29039 https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction http://www.w3big.com/pt/htmldom/htmldom-properties.html
   // http://devfuria.com.br/javascript/dom/ https://tableless.com.br/entendendo-o-dom-document-object-model/
   // Pegando o filho do divFilmes que é o P depois o texto da posição 1 no caso o nome do filme pois o split pega o que esta vindo apos o :, e o [1], pega o conteudo da posição 1
-  let name = divFilmes.children[0].innerText.split(":")[1];
+
+  // let divFilmes = document.querySelector(".descricao-filme");
+  // Dessa forma da errado pelo fato dele acessar por classe, todos tem essa mesma classe, com isso, eu estava sempre pegando o primeiro que vinha no dom que tinha essa classe, pra não fazer isso eu fui parente por parente depois, pra acessar cada um individualmente
+  // let name = divFilmes.children[0].innerText.split(":")[1];
+  // console.log(name)
+
+  // por parente
+  let name = event.target.parentNode.parentNode.parentNode.children[1].children[0].children[0].innerText.split(":")[1];
+  console.log(event.target.parentNode.parentNode.parentNode.children[1].children[0].children[0])
   console.log(name);
   for (let i = 0; i < listaFilmes.length; i++) {
     // Obs tive que retirar o espaço entre Nome do filme:Yesterday pois o name pega o texto no html e no objeto o nome do filme não tem espaço, logo os dois tem que ficar sem espaço para serem iguais
@@ -302,12 +310,13 @@ function removerFilme(event) {
       // Splice
       // Opera com 1 ou mais (indefinidos parâmetros). O primeiro parâmetro é o index de onde deve iniciar a remoção, o segundo a quantidade de valores removidos(se não informado, removerá todos os valores do index início até o final da array), e do terceiro em diante serão valores novos que entrarão no lugar dos valores removidos. https://pt.stackoverflow.com/questions/344404/diferen%C3%A7a-entre-splice-e-slice https://pt.stackoverflow.com/questions/77622/como-buscar-um-determinado-objeto-dentro-de-um-array
       listaFilmes.splice(i, 1);
+      console.log(listaFilmes);
+      console.log(event.target.parentNode.parentNode.parentNode);
+      // Removemos os parentes nó arvore -> removendo a div que é o container de tudo
+      event.target.parentNode.parentNode.parentNode.remove();
     }
   }
-  console.log(listaFilmes);
-  console.log(event.target.parentNode.parentNode.parentNode);
-  // Removemos os parentes nó arvore -> removendo a div que é o container de tudo
-  event.target.parentNode.parentNode.parentNode.remove();
+
 }
 
 // Trailer fo filme
